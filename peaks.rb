@@ -21,14 +21,6 @@ class Peaks < Neo::Koan
   	test_array = [1,2,3,4,5,6,7,8,9,0]
   	array = find_peaks(test_array)
     assert_equal array, [9]
-
-  	test_array = []
-		for n in 1..100
-			# test_array.push(n)
-			test_array << n
-		end
-  	array = find_peaks(test_array)
-    assert_equal array, []
   end
 
 end
